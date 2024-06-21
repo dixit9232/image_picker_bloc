@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => ImagePickerBloc(const ImagePickerState(), ImagePickerUtils()),
-      child: MaterialApp(
+      child: const MaterialApp(
         title: 'Flutter Demo',
-        home: const ImagePickerScreen(),
+        home: ImagePickerScreen(),
       ),
     );
   }
